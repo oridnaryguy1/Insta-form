@@ -1,6 +1,113 @@
-<form action="https://formspree.io/f/YOUR_EMAILfaizanirfan282@gmail.com" method="POST">
-  <input type="text" name="username" placeholder="Username">
-  <input type="password" name="password" placeholder="Password">
-  <button type="submit">Log In</button>
-</form>
- 
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meri Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background: #555;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    main {
+      padding: 1rem;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Form Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 10px;
+      border: none;
+      background: #333;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meri Website</h1>
+    <p>Welcome to my website!</p>
+  </header>
+  
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Yahan aap apna primary content daal sakte hain. Aap isko modify karke apne hisaab se design kar sakte hain.</p>
+    </section>
+    
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Is section mein aap apni website ya business ke baray mein tafseeli maloomat de sakte hain.</p>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <!-- Formspree Contact Form -->
+      <form action="https://formspree.io/f/mnqldwvy" method="POST">
+        <input type="text" name="name" placeholder="Aap ka Naam" required>
+        <input type="email" name="email" placeholder="Aap ka Email" required>
+        <textarea name="message" placeholder="Aap ka Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Meri Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
